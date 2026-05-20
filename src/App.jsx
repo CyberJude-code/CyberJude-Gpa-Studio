@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={theme === 'dark' ? 'dark' : 'light'}>
       <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_20%),linear-gradient(180deg,_rgba(15,23,42,1)_0%,_rgba(15,23,42,0.96)_40%,_rgba(15,23,42,1)_100%)] dark:bg-slate-950">
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <BrowserRouter>
           <Layout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
